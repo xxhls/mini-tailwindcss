@@ -1,5 +1,6 @@
 .idea
 bin
+test
 node_modules
 
 index.css
