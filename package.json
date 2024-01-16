@@ -1,11 +1,46 @@
 {
-  "name": "mini-tailwindcss",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "xxhls",
-  "license": "GPL-2.0-only"
+    "name": "mini-tailwindcss",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xxhls/mini-tailwindcss"
+    },
+    "description": "Minimal version of tailwindcss",
+    "keywords": [
+        "tailwindcss",
+        "css",
+        "less",
+        "scss",
+        "sass",
+        "styl"
+    ],
+    "homepage": "https://github.com/xxhls/mini-tailwindcss",
+    "bugs": "https://github.com/xxhls/mini-tailwindcss/issues",
+    "license": "GPL-2.0-only",
+    "author": "xxhls",
+    "files": [
+        "./build/index.css",
+        "./build/index.less",
+        "./build/index.sass",
+        "./build/index.scss",
+        "./build/index.styl"
+    ],
+    "exports": {
+        ".": {
+            "import": "./build/index.css"
+        },
+        "./css": "./build/index.css",
+        "./less": "./build/index.less",
+        "./scss": "./build/index.scss",
+        "./sass": "./build/index.sass",
+        "./styl": "./build/index.styl"
+    },
+    "scripts": {
+        "build": "node bin/build.js",
+        "publish": "node bin/publish.js"
+    },
+    "private": false,
+    "engines": {
+        "node": ">=14"
+    }
 }
