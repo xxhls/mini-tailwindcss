@@ -1,8 +1,7 @@
 {
     "name": "mini-tailwindcss",
-    "version": "0.0.1",
+    "version": "0.0.6",
     "repository": {
-        "type": "git",
         "url": "https://github.com/xxhls/mini-tailwindcss"
     },
     "description": "Minimal version of tailwindcss",

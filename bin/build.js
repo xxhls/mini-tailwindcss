@@ -26,4 +26,6 @@
     fs.writeFileSync(path.join(__dirname, "..", "build/index.styl"), styl, {
         flag: "w"
     });
+
+    console.log("成功将CSS编译成其他格式文件");
 })();
